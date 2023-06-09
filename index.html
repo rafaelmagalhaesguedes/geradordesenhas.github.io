@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas Aleatórias</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manrope">
+</head>
+<body>
+    <main>
+        <header>
+            <h1 id="titulo"><img src="cadeado.png" class="icon"></img> Gerador de Senhas Aleatórias</h1>
+        </header>
+        
+        <section id="get-info">
+            <p><strong>Escolha a quantidade de caracteres:</strong></p>
+            <input type="text" id="tamanho" min="1" max="10" class="input-number">
+            <input type="button" onclick='showPassword()' class="input-button" value="Gerar Senha">
+        </section>
+
+        <section id="display-info">
+            <p id="display-message"></p>
+            <p id="display-key"></p>
+        </section>
+    </main>
+    <script src="gerador.js"></script>
+</body>
+</html>
